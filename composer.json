@@ -1,0 +1,38 @@
+{
+    "name": "wssolutions/contao-web-content-access",
+    "type": "contao-bundle",
+    "description": "Accessibility for Contao sites (BFSG / European Accessibility Act): accessibility button, 9 automatic repairs and a link to the accessibility statement. By WS SOLUTIONS LLC, https://wcag.tech",
+    "keywords": ["contao", "accessibility", "barrierefreiheit", "BFSG", "WCAG", "EAA"],
+    "homepage": "https://wcag.tech/integrationen",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "WS SOLUTIONS LLC",
+            "email": "support@wcag.tech",
+            "homepage": "https://wcag.tech",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@wcag.tech",
+        "docs": "https://wcag.tech/integrationen"
+    },
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3 || ^6.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WSSolutions\\ContaoWebContentAccess\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "WSSolutions\\ContaoWebContentAccess\\ContaoManager\\Plugin"
+    }
+}
